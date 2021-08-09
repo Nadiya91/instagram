@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  min-height: 1000px;
+}
+
+.top-menu {
+  border-bottom: 1px solid #dbdbdb;
+  position: sticky;
+  background: #fff;
+  top: 0;
+  width: 100%;
+}
+
+.middle {
+  max-width: 955px;
+  height: 55px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  padding-top: 5px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  align-items: center;
+  height: 55px;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.top-nav a {
+  display: flex;
+  align-items: center;
+  color: #262626;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 2px;
+  font-size: 22px;
+  border-color: transparent;
+}
+
+.top-nav a:hover {
+  /*box-shadow: -2px -5px 10px -2px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+  */
+  transform: translate(0, 2px);
+  border-bottom: 1px solid #262626;
+  transition: transform 0.7s, border-color 1s;
+}
+
+.link-message {
+  position: relative;
+}
+.top-nav .notification {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  background: #dc565b;
+  color: #fff;
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+  text-align: center;
+
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* Searchbox START*/
+.search-box {
+  /*
+    A = 16px;
+    font-size: A px;
+    1em = A px;
+
+    1px => em
+    1px / A = em
+
+    
+  */
+  font-size: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background: #fafafa;
+  border: 0.0625em solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 0.1875em;
+}
+
+.search-box input {
+  font-size: 0.8125em;
+  border: 0;
+  background: transparent;
+  padding: 0 0.3077em 0 1.5385em;
+  /*width: 14.5385em;*/
+  width: 70%;
+
+  height: 2.0769em;
+}
+
+.search-box svg {
+  width: 0.5625em;
+  position: absolute;
+  left: 0.375em;
+}
+
+@media only screen and (max-width: 700px) {
+  .search-box {
+    font-size: 16px;
+  }
+}
+/* Searchbox END*/
+/*START*/
+.container{
+  padding:0 15%;
+}
+.bio{
+  display:grid;
+  grid-template-columns:1fr 2fr ;
+  background-color:whitesmoke;
+  height:13em;
+  padding:3em 0 0 5em;
+  border-bottom: 0.2px solid#dbdbdb;
+}
+.profile-photo{
+  background-color: 10em;
+  height:10em;
+  border-radius:50%;
+}
+.profile-photo>img{
+  width: 100%;
+  height:100%;
+  object-fit:cover;
+  border-radius: 50%;
+}
+.profile-info.name{
+  font-size: 1.6em;
+  color:rgb(255, 174, 127);
+}
+.profile-info button{
+  background-color: blueviolet;
+  color:white;
+  font-size:1.1em;
+  width: 6em;
+  height: 2em;
+  border:unset;
+  cursor:pointer;
+}
+.folders-nav{
+  background-color:white;
+  height:0.5em;
+}
+.folders{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr ;
+  column-gap:0.5em ;
+  row-gap: 0.5em;
+  margin-bottom: 0.5em;
+}
+.folders-photo:{
+  background-color: 10em;
+  height:10em;
+  border-radius:50%;
+}
+/*Kak skruglitj kraja "folders" i umenjshitj kartinki?*/
+
+.gallery-nav{
+  background-color:white;
+  height:0.5em;
+}
+.gallery{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap:0.7em;
+  row-gap: 1.7em;
+  margin-bottom:2em;
+  }
+  .item{
+    height: 205px;
+    width: 205px;
+    background: #000;
+}
+.item>img{
+  height:100%;
+  width:100%;
+  object-fit:cover;
+}
+.item>img:hover{
+  opacity:0.7;
+}
+
+
+/*END*/
