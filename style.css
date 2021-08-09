@@ -1,6 +1,9 @@
+/** @format */
+
 body {
   margin: 0;
   min-height: 1000px;
+  background: #fafafa;
 }
 
 .top-menu {
@@ -121,83 +124,92 @@ body {
 }
 /* Searchbox END*/
 /*START*/
-.container{
-  padding:0 15%;
+.container {
+  margin: auto;
+  max-width: 935px;
 }
-.bio{
-  display:grid;
-  grid-template-columns:1fr 2fr ;
-  background-color:whitesmoke;
-  height:13em;
-  padding:3em 0 0 5em;
+.bio {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr, 1fr;
+  background-color: whitesmoke;
+  min-height: 13em;
+  padding: 3em 0 0 5em;
   border-bottom: 0.2px solid#dbdbdb;
 }
-.profile-photo{
+.profile-photo {
   background-color: 10em;
-  height:10em;
-  border-radius:50%;
-}
-.profile-photo>img{
-  width: 100%;
-  height:100%;
-  object-fit:cover;
+  height: 10em;
+  width: 10em;
   border-radius: 50%;
 }
-.profile-info.name{
-  font-size: 1.6em;
-  color:rgb(255, 174, 127);
+.profile-photo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
-.profile-info button{
+.profile-info.name {
+  font-size: 1.6em;
+  color: rgb(255, 174, 127);
+}
+.profile-info button {
   background-color: blueviolet;
-  color:white;
-  font-size:1.1em;
+  color: white;
+  font-size: 1.1em;
   width: 6em;
   height: 2em;
-  border:unset;
-  cursor:pointer;
+  border: unset;
+  cursor: pointer;
 }
-.folders-nav{
-  background-color:white;
-  height:0.5em;
+.folders-nav {
+  background-color: white;
+  height: 0.5em;
 }
-.folders{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr ;
-  column-gap:0.5em ;
+.folders {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column: span 2;
+  column-gap: 0.5em;
   row-gap: 0.5em;
   margin-bottom: 0.5em;
 }
-.folders-photo:{
+.folders-photo {
   background-color: 10em;
-  height:10em;
-  border-radius:50%;
+  height: 10em;
+  border-radius: 50%;
+}
+
+.story {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.story img {
+  width: 100%;
 }
 /*Kak skruglitj kraja "folders" i umenjshitj kartinki?*/
 
-.gallery-nav{
-  background-color:white;
-  height:0.5em;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2em;
 }
-.gallery{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap:0.7em;
-  row-gap: 1.7em;
-  margin-bottom:2em;
-  }
-  .item{
-    height: 205px;
-    width: 205px;
-    background: #000;
+.item {
+  height: 295px;
+  width: 295px;
+  background: #000;
+  margin: 10px 5px;
 }
-.item>img{
-  height:100%;
-  width:100%;
-  object-fit:cover;
+.item > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
-.item>img:hover{
-  opacity:0.7;
+.item > img:hover {
+  opacity: 0.7;
 }
-
 
 /*END*/
